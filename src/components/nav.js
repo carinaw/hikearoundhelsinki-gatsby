@@ -34,7 +34,7 @@ const NavbarItem = styled(Link)`
 
   &:hover {
     opacity: 0.7;
-    cursor: initial;
+    cursor: pointer;
   }
 `
 

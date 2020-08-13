@@ -16,7 +16,7 @@ import StyledBackgroundSection from "../components/hero-background"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Hike around Helsinki | Helsinki's best hiking trails & nature spots" />
     <StyledBackgroundSection>
       <Title>Hike around Helsinki</Title>
       <SubTitle>& beyond</SubTitle>
