@@ -15,14 +15,14 @@ const NavbarItem = styled(Link)`
   font-size: 1.2em;
   margin: 1rem 2rem;
 
-  @media only screen and (max-width: 320px) {
-    font-size: 1em;
+  @media only screen and (max-width: 321px) {
+    font-size: 0.4em;
     margin: 1rem 1rem;
   }
 
   @media only screen and (max-width: 415px) {
     font-size: 1.2em;
-    margin: 1rem 1.4rem;
+    margin: 1rem 0.2rem;
   }
 
   &:visited,
