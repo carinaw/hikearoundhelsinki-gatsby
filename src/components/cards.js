@@ -12,7 +12,7 @@ const Cards = () => {
         nodes {
           id
           childImageSharp {
-            fixed(width: 375) {
+            fixed(width: 300) {
               ...GatsbyImageSharpFixed
             }
           }

@@ -34,7 +34,7 @@ const Title = styled.h1`
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  @media only screen and (max-width: 415px) {
+  @media only screen and (max-width: 500px) {
     font-size: 5em;
   }
 
@@ -50,12 +50,12 @@ const SubTitle = styled.h2`
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  @media only screen and (max-width: 415px) {
-    font-size: 3em;
+  @media only screen and (max-width: 500px) {
+    font-size: 2em;
   }
 
   @media only screen and (max-width: 320px) {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 `
 

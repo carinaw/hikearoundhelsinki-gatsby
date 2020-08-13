@@ -7,12 +7,23 @@ const Wrapper = styled.div`
   max-width: 100%;
   display: flex;
   justify-content: center;
-  margin: 2em auto 0 auto;
+  margin: 3em auto 0 auto;
   flex-direction: column;
+
+  @media only screen and (max-width: 500px) {
+    max-width: 85%;
+  }
+  @media only screen and (max-width: 500px) {
+    margin: 2em auto 0 auto;
+  }
 `
 
 const SectionHeader = styled.h1`
   font-size: 1.85em;
+
+  @media only screen and (max-width: 320px) {
+    font-size: 1.5em;
+  }
 `
 
 const CardWrapper = styled.div`

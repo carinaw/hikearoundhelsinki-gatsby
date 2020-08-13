@@ -6,9 +6,18 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 3rem 0;
   line-height: 1.75em;
   font-size: 1.1em;
+
+  @media only screen and (max-width: 320px) {
+    width: 85%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 85%;
+    padding: 2rem 0;
+  }
 `
 
 const Text = styled.p`
@@ -18,6 +27,10 @@ const Text = styled.p`
 
 const SectionHeader = styled.h1`
   font-size: 1.85em;
+
+  @media only screen and (max-width: 320px) {
+    font-size: 1.5em;
+  }
 `
 
 const TextBox = () => {
