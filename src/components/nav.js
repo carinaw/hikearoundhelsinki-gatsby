@@ -46,7 +46,7 @@ const NavImg = styled.img`
 const Nav = ({ siteTitle }) => {
   return (
     <Wrapper>
-      <NavbarItem to="">Helsinki</NavbarItem>
+      <NavbarItem to="/hikes/pilvijarvi">Helsinki</NavbarItem>
 
       <Link to="/">
         <NavImg src={Logo} />
