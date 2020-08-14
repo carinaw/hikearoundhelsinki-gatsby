@@ -30,7 +30,7 @@ const IndexPage = () => (
 const Title = styled.h1`
   font-size: 7rem;
   margin: 1.4rem 1rem;
-  font-family: "LeagueGothic", sans-serf;
+  font-family: "LeagueGothic", sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 

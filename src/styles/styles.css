@@ -3,6 +3,10 @@
   src: url("./fonts/leaguegothic-regular-webfont.woff") format("woff"),
     url("./fonts/leaguegothic-regular-webfont.woff2") format("woff2");
 }
+@font-face {
+  font-family: "DroidSerif";
+  src: url("./fonts/Droid-Serif.ttf.woff") format("woff");
+}
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;800&display=swap");
 
 * {
