@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 
 const NavbarItem = styled(Link)`
   font-size: 1.2em;
-  margin: 1rem 2rem;
+  margin: 1.2rem 2rem;
 
   @media only screen and (max-width: 321px) {
     font-size: 0.4em;
@@ -39,8 +39,8 @@ const NavbarItem = styled(Link)`
 `
 
 const NavImg = styled.img`
-  max-width: 3rem;
-  margin: 0.5em 1em;
+  max-width: 3.5rem;
+  margin: 0em 1em;
 `
 
 const Nav = ({ siteTitle }) => {

@@ -5,6 +5,7 @@ import styled from "styled-components"
 import MapboxGLMap from "../../components/map2"
 
 import Layout from "../../components/layout"
+import Badge from "../../components/badge"
 import SEO from "../../components/seo"
 import BackgroundImage from "gatsby-background-image"
 
@@ -47,6 +48,10 @@ const Pilvijarvi = () => {
             Welcome to Pilvijärvi, a perfect destination for 5 or 10km hike or
             run, and a jump into the scenic, lovely lake.
           </p>
+          <Badges>
+            <Badge></Badge>
+            <Badge></Badge>
+          </Badges>
         </IntroBox>
         <FactBox>
           <p>
@@ -111,6 +116,11 @@ const Pilvijarvi = () => {
   )
 }
 
+const Badges = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`
+
 const MapSection = styled(MapboxGLMap)`
   max-width: 90%;
 `
@@ -118,6 +128,7 @@ const MapSection = styled(MapboxGLMap)`
 const ContentHeader = styled.h2`
   font-size: 1.5em;
   text-align: left;
+  font-family: "DroidSerif";
 `
 const ContentBox = styled.div`
   margin: 1em auto -2em auto;
@@ -201,7 +212,7 @@ const TitleWrapper = styled.div`
 `
 
 const Title = styled.h1`
-  font-size: 2em;
+  font-size: 2.3em;
   margin-bottom: 0.4em;
 `
 

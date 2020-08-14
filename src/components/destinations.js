@@ -20,6 +20,7 @@ const Wrapper = styled.div`
 
 const SectionHeader = styled.h1`
   font-size: 1.85em;
+  font-family: "DroidSerif";
 
   @media only screen and (max-width: 320px) {
     font-size: 1.5em;
