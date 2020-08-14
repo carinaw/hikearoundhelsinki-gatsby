@@ -138,7 +138,7 @@ const ContentSection = styled.div`
 
 const IntroBox = styled.div`
   font-size: 1em;
-  margin: 1em auto 0 auto;
+  margin: 1em 1em 0 auto;
   flex: 00 55%;
 
   p {
@@ -157,7 +157,7 @@ const FactBox = styled.div`
   p {
     position: relative;
     margin: 0 auto;
-    padding: 1em;
+    padding: 2em 1em;
     font-weight: bold;
   }
 
