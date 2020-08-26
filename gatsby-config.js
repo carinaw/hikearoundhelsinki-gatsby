@@ -34,8 +34,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-fontawesome-css`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `p3j464e98pds`,
+        accessToken: `O1MZJ6ownjra7H_fUhE-biUM2B9ifqEbzosAYSw_nDA`,
+      },
+    },
   ],
 }
