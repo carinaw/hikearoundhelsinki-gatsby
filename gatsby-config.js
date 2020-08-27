@@ -37,9 +37,12 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `p3j464e98pds`,
-        accessToken: `O1MZJ6ownjra7H_fUhE-biUM2B9ifqEbzosAYSw_nDA`,
+        spaceId: `${process.env.CONTENTFUL_SPACE_ID}`,
+        accessToken: `${process.env.CONTENTFUL_ACCESS_TOKEN}`,
       },
     },
   ],
 }
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
