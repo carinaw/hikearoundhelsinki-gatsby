@@ -1,11 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
-import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
 
-import "../components/layout.css"
 import "../styles/styles.css"
 
 import Layout from "../components/layout"
