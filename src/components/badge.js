@@ -3,11 +3,11 @@ import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCoffee } from "@fortawesome/free-solid-svg-icons"
 
-const Badge = () => {
+const Badge = props => {
   return (
     <Box>
       <Icon icon={faCoffee} />
-      <Text>Wonderful wizard</Text>
+      <Text>{props.children}</Text>
     </Box>
   )
 }
