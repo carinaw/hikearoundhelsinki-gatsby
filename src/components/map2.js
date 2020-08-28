@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react"
 import mapboxgl from "mapbox-gl"
 import "mapbox-gl/dist/mapbox-gl.css"
-import styled from "styled-components"
 
 const MapboxGLMap = () => {
   const [map, setMap] = useState(null)
