@@ -1,3 +1,9 @@
+const dotenv = require("dotenv")
+
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config()
+}
+
 module.exports = {
   siteMetadata: {
     title: `Hike around Helsinki`,
@@ -38,7 +44,7 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `p3j464e98pds`,
-        accessToken: `O1MZJ6ownjra7H_fUhE-biUM2B9ifqEbzosAYSw_nDA`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
   ],
