@@ -35,7 +35,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   margin: 0 auto;
   flex-direction: column;
 
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     var(--image-url) center center;
   background-size: cover;
 `

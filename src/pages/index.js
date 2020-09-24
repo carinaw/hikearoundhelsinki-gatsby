@@ -25,9 +25,8 @@ const IndexPage = () => (
 
 const Title = styled.h1`
   font-size: 7rem;
-  margin: 1.4rem 1rem;
-  font-family: "LeagueGothic", sans-serif;
-  letter-spacing: 0.1em;
+  margin: 1rem 1rem;
+  font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;
 
   @media only screen and (max-width: 500px) {
@@ -42,9 +41,7 @@ const Title = styled.h1`
 const SubTitle = styled.h2`
   font-size: 3rem;
   margin: 1rem 1rem;
-  font-family: "LeagueGothic", sans-serf;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-family: "Caveat", sans-serf;
 
   @media only screen and (max-width: 500px) {
     font-size: 2em;

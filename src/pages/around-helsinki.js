@@ -98,6 +98,8 @@ const HikeLink = styled(Link)`
     opacity: 0.7;
     cursor: pointer;
   }
+
+  font-family: "Fjalla One";
 `
 
 const HikesWrapper = styled.div`

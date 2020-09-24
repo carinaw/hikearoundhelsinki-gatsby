@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 `
 
 const NavbarItem = styled(Link)`
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 1.2rem 2rem;
 
   @media only screen and (max-width: 321px) {

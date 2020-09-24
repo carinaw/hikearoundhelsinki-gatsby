@@ -126,6 +126,8 @@ const HikePage = props => {
 const Badges = styled.div`
   display: flex;
   flex-wrap: wrap;
+  font-family: "Caveat";
+  font-size: 1.2em;
 `
 
 const MapSection = styled(MapboxGLMap)`
@@ -135,7 +137,7 @@ const MapSection = styled(MapboxGLMap)`
 const ContentHeader = styled.h2`
   font-size: 1.5em;
   text-align: left;
-  font-family: "DroidSerif";
+  font-family: "Fjalla One";
 `
 const ContentBox = styled.div`
   margin: 1em auto -2em auto;
