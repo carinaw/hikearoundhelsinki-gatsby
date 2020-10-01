@@ -7,7 +7,7 @@ import BackgroundImage from "gatsby-background-image"
 const BackgroundSection = ({ className, children }) => {
   const data = useStaticQuery(graphql`
     query {
-      hero: file(relativePath: { eq: "home.jpg" }) {
+      hero: file(relativePath: { eq: "home5.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid
@@ -38,6 +38,10 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     var(--image-url) center center;
   background-size: cover;
+
+  @media only screen and (max-width: 500px) {
+    height: 70vh;
+  }
 `
 
 const StyledInnerWrapper = styled.div`

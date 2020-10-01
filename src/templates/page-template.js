@@ -77,9 +77,12 @@ const HikePage = props => {
         <FactBox>
           <p>
             <ul>
-              {props.data.contentfulHikePage.detailsBox.map(detail => {
-                return <li id="where">{detail}</li>
-              })}
+              <li class="header">Where</li>
+              <li> {props.data.contentfulHikePage.detailsBox[0]}</li>
+              <li class="header">Duration</li>
+              <li> {props.data.contentfulHikePage.detailsBox[1]}</li>
+              <li class="header">Distance</li>
+              <li> {props.data.contentfulHikePage.detailsBox[2]}</li>
             </ul>
           </p>
         </FactBox>
@@ -158,8 +161,8 @@ const ContentSection = styled.div`
 
 const IntroBox = styled.div`
   font-size: 1em;
-  margin: 1em 1em 0 auto;
-  flex: 00 55%;
+  margin: 1em auto;
+  flex: 00 65%;
 
   p {
     text-align: left;
@@ -167,18 +170,17 @@ const IntroBox = styled.div`
 `
 
 const FactBox = styled.div`
-  background: hsla(42, 100%, 70%, 0.5);
+  background: #d8fdf3;
   margin: 1em auto;
   flex: 1;
-  width: 100%;
   position: relative;
   display: inline-block;
 
   p {
     position: relative;
-    margin: 0 auto;
+    margin: 0 2em;
     padding: 2em 1em;
-    font-weight: bold;
+    text-align: left;
   }
 
   ul {
@@ -187,16 +189,9 @@ const FactBox = styled.div`
     padding: 0;
   }
 
-  li#where::before {
-    content: "🗺";
-  }
-
-  li#distance::before {
-    content: "🥾";
-  }
-
-  li#duration::before {
-    content: "⏱";
+  li.header {
+    font-weight: bold;
+    margin: 0.8em auto 0.4em auto;
   }
 `
 
