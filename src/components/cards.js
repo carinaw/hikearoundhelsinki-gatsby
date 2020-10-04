@@ -24,7 +24,7 @@ const Cards = () => {
     <div>
       <div className="home-cards">
         {data.images.nodes.map(image => (
-          <a href="">
+          <a>
             <Img key={image.id} fixed={image.childImageSharp.fixed} />
           </a>
         ))}
