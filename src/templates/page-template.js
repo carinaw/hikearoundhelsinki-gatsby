@@ -9,6 +9,13 @@ import Badge from "../components/badge"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faMapPin,
+  faStopwatch,
+  faHiking,
+} from "@fortawesome/free-solid-svg-icons"
+
 export const query = graphql`
   query($slug: String!) {
     contentfulHikePage(slug: { eq: $slug }) {
@@ -77,11 +84,24 @@ const HikePage = props => {
         <FactBox>
           <p>
             <ul>
-              <li class="header">Where</li>
+              <li class="header">
+                {" "}
+                <FontAwesomeIcon icon={faMapPin} size="1x" /> Where
+              </li>
+
               <li> {props.data.contentfulHikePage.detailsBox[0]}</li>
-              <li class="header">Duration</li>
+
+              <li class="header">
+                {" "}
+                <FontAwesomeIcon icon={faStopwatch} size="1x" /> Duration
+              </li>
+
               <li> {props.data.contentfulHikePage.detailsBox[1]}</li>
-              <li class="header">Distance</li>
+
+              <li class="header">
+                <FontAwesomeIcon icon={faHiking} size="1x" /> Distance
+              </li>
+
               <li> {props.data.contentfulHikePage.detailsBox[2]}</li>
             </ul>
           </p>
@@ -179,8 +199,9 @@ const FactBox = styled.div`
   p {
     position: relative;
     margin: 0 2em;
-    padding: 2em 1em;
+    padding: 1em 1em 2em 1em;
     text-align: left;
+    font-size: 1.1em;
   }
 
   ul {
@@ -191,7 +212,8 @@ const FactBox = styled.div`
 
   li.header {
     font-weight: bold;
-    margin: 0.8em auto 0.4em auto;
+    margin: 1.4em auto 0.4em auto;
+    word-spacing: 0.3em;
   }
 `
 
